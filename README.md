@@ -1,3 +1,4 @@
+
 # Marist Task Management System
 
 ## Overview
@@ -36,53 +37,65 @@ The project consists of several components, each responsible for different aspec
 ### Installation
 
 1. **Clone the Repository**
-
    ```bash
    git clone https://github.com/YourUsername/MaristTaskManager.git
    cd MaristTaskManager
-Install Dependencies
+   ```
 
-bash
-Copy code
+
+## Install Dependencies
+
+```bash
 pip install -r requirements.txt
-Set Up the Database
+```
 
-Start MySQL Server.
-Create a database named MaristTask.
-Execute the SQL scripts provided in Phase5.1(DataInsert).sql and Phase5.2 Tables(Normalized).sql to create and populate the necessary tables.
-Configure Database Connection
+## Set Up the Database
 
-Update the database connection settings in the config.py file:
+1. Start MySQL Server.
+2. Create a database named `MaristTask`.
+3. Execute the SQL scripts provided in `Phase5.1(DataInsert).sql` and `Phase5.2 Tables(Normalized).sql` to create and populate the necessary tables.
 
-python
-Copy code
+## Configure Database Connection
+
+Update the database connection settings in the `config.py` file:
+
+```python
 DB_HOST = 'localhost'
 DB_USER = 'root'
 DB_PASSWORD = 'your_password'
 DB_NAME = 'MaristTask'
-Running the Application
-Start the Application
+```
 
-bash
-Copy code
+## Running the Application
+
+### Start the Application
+
+```bash
 python main.py
-Access the Application
+```
 
-Open your web browser and navigate to http://localhost:5000.
+### Access the Application
 
-Usage Instructions
-Admin Access
-Username: admin_user
-Password: admin_pass
-Normal User Access
-Username: normal_user
-Password: normal_pass
-Logging In
-Open the login page.
-Enter the provided username and password.
-Click the "Login" button.
-Main Menu
+Open your web browser and navigate to [http://localhost:5000](http://localhost:5000).
+
+## Usage Instructions
+
+### Admin Access
+- **Username**: `admin_user`
+- **Password**: `admin_pass`
+
+### Normal User Access
+- **Username**: `normal_user`
+- **Password**: `normal_pass`
+
+### Logging In
+1. Open the login page.
+2. Enter the provided username and password.
+3. Click the "Login" button.
+
+### Main Menu
 After logging in, you will be presented with the main menu. The options available will depend on your role (admin or normal user).
 
-Admin Functions
+### Admin Functions
 Admins have additional functionalities such as managing users, viewing login records, and adjusting system settings.
+
